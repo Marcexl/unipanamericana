@@ -1,0 +1,49 @@
+/*
+ * mixed by marcexl
+ * version 06102021
+ * archivos de fuentes
+ */
+@font-face {
+  font-family: Laurentian;
+  src: url(../fuentes/Laurentian/LaurentianStdRegular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Laurentian-Bold;
+  src: url(../fuentes/Laurentian/LaurentianStdBold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Laurentian-Italic;
+  src: url(../fuentes/Laurentian/LaurentianStdItalic.otf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Seravek;
+  src: url(../fuentes/Seravek/Seravek-Regular.otf);
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: Seravek-Bold;
+  src: url(../fuentes/Seravek/Seravek-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Seravek-Light;
+  src: url(../fuentes/Seravek/Seravek-Light.otf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Seravek-Medium
+  src: url(../fuentes/Seravek/Seravek-Medium.otf);
+  font-weight: 600;
+}
+

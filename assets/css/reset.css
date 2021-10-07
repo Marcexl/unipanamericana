@@ -1,0 +1,348 @@
+/*
+ * mixed by marcexl
+ * version 05102021
+ *
+ */
+
+html, body{
+	font-family: 'Laurentian', sans-serif;
+}
+
+form{
+	font-family: 'Laurentian', sans-serif!important;
+}
+
+.Header{
+	background: white;
+	box-shadow: 0px -3px 10px 3px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0px -3px 10px 3px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px -3px 10px 3px rgba(0,0,0,0.3);
+}
+
+.Header__innerContainer{
+	padding: .5rem 6rem;
+}
+
+.Header__logo a h1{
+ 	background: url(../img/global/logo-new.png);
+ 	background-size: 100% 100%;
+ 	height: 80px;
+ 	width: 250px;
+}
+
+.Nav .boton{
+	background: #840e33;
+	color: white;
+	font-family: 'Seravek-Bold',sans-serif;
+	font-size: .8rem;
+	padding: 12.5px 30px;
+	border: none;
+	border-radius: 0;
+}
+
+.Principal{
+	padding: 90px 0 80px;
+	background: url(../img/home/principal/home.png);
+	background-size: cover;
+	height: 100vh;
+}
+
+.Principal__container{
+	padding: 1rem 6rem;
+	display: block;
+}
+
+.Principal__title{
+	margin-top: calc(50% - 150px);
+}
+
+#hsForm_3b9aabc3-5d97-4141-88d9-04f1ca75d529 label{
+	display: none;
+}
+
+.Principal__title span:nth-of-type(2):after{
+	display: none;
+}
+
+.Principal__title span.white-title.small-font{
+	font-family: 'Laurentian-Italic', sans-serif;
+	font-size: 1.5rem;
+	margin-top: 30px;
+}
+
+/* formulario */
+#formulario-slider{
+	position: absolute;
+	right: 6rem;
+	top: 250px;
+	box-shadow: 0px 9px 11px 3px rgba(0,0,0,0.39);
+	-webkit-box-shadow: 0px 9px 11px 3px rgba(0,0,0,0.39);
+	-moz-box-shadow: 0px 9px 11px 3px rgba(0,0,0,0.39);
+	padding: 30px 40px;
+}
+
+select.hs-input,
+input.hs-input{
+	border: 1px solid #CCC!important;
+	border-radius: 0!important;
+	padding: 10px!important;
+	margin-bottom: 15px;
+	text-transform: none!important;
+}
+
+fieldset.form-columns-2 div{
+	margin-bottom: 0!important;
+}
+
+select.hs-input{
+	width: 100%!important;
+	height: auto!important;
+	margin-bottom: 0;
+}
+
+.Contacto__form input[type=submit]{
+	width: 100%;
+    box-sizing: border-box!important;
+    border-radius: 0;
+    background: #840e33;
+    font-family: 'Seravek-Bold',sans-serif;
+    font-size: .8rem;
+    padding: 12.5px 30px;
+    border: none;
+    margin-top: 15px;
+}
+
+form.hs-form-3b9aabc3-5d97-4141-88d9-04f1ca75d529_88be7c69-152c-40a9-9c3b-9fac6d2e56e9{
+	margin-bottom: 0!important;
+}
+
+form .actions{
+	margin: 0!important;
+	padding: 0!important;
+}
+
+#preparatoria_de_procedencia-3b9aabc3-5d97-4141-88d9-04f1ca75d529{
+	margin-bottom: 0;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cfb58a!important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #cfb58a!important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #cfb58a!important;
+}
+
+/* segunda seccion */
+h5 span.gold-title,
+.g-subtitle span.gold-title,
+.Principal__title span.gold-title{
+	color:#ba9459;
+	font-size: 2.5rem;
+	font-family: 'Laurentian', sans-serif;
+	font-weight: normal;
+	text-align: left;
+}
+.g-subtitle span.white-title,
+.Principal__title span.white-title{
+	color:white;
+	font-size: 2.5rem;
+	font-family: 'Laurentian', sans-serif;
+	font-weight: normal;
+	text-align: left;
+}
+h5 span.purple-title,
+.g-subtitle span.purple-title{
+	color: #840e33;
+	font-size: 2.5rem;
+	font-family: 'Laurentian', sans-serif;
+	font-weight: normal;
+	text-align: left;
+}
+
+.g-subtitle span{
+	line-height: 2.5rem;
+}
+
+.g-subtitle:before{
+	display: none;
+}
+
+.estudio-subtitle{
+	font-family: 'Laurentian-Bold', sans-serif;
+	font-size: 20px;
+	color: #840e33;
+	margin-bottom: 30px;
+}
+
+.lic-list {
+	list-style: disc;
+	list-style-position: inside;
+	padding-left: 15px;
+}
+
+.lic-list li{
+	list-style: disc;
+	color: #ba9459;
+}
+
+.lic-list li p{
+	color: #000;
+	font-family: 'Seravek',sans-serif;
+	font-size: 1rem;
+}
+.col-lg-6{
+	position: relative;
+}
+
+.gold-flag{
+	position: absolute;
+	width: 100px;
+	height: 175px;
+	background: url(../img/global/flag.png);
+	background-size: cover;
+	top: 0;
+	left: 30px;
+}
+
+.g-f-small{
+	left: -60px;
+	top: 5px;
+	width: 50px;
+	height: 97.5px;
+}
+
+/* accodeon */
+.accordion{
+	margin-top: 145px;
+}
+
+.accordion-button{
+	background: white;
+	border: none;
+	width: 100%;
+	text-align: left;
+	font-family: 'Seravek-Bold',sans-serif;
+}
+
+.accordion-item{
+	padding: 15px;
+    border: 1px solid #CCC;
+    outline: none!important;
+    margin-bottom: 10px;
+}
+
+.accordion-button a:first-child {
+	color: #840e33;
+}
+
+.accordion-button a:first-child {
+	color: #840e33;
+}
+
+.title-ig{
+	color:#ba9459!important;
+	background: url(../img/global/insta.png);
+	background-size: 19px 19px;
+	background-position: 100% 0;
+	padding-right: 30px;
+	background-repeat: no-repeat;
+}
+
+button:focus{
+	outline: none;
+	border: none;
+}
+
+.accordion-body{
+	font-family: 'Seravek',sans-serif;
+}
+
+
+/* apoyo */
+.Apoyo{
+	background:url(../img/global/apoyo.jpg);
+	background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Apoyo .container-fluid{
+	padding: 1rem 6rem;
+}
+
+.Apoyo__icons .col-md-6{
+    background: white;
+    flex: 0 0 32%;
+    text-align: left;
+    margin-right: 1%;
+    padding: 15px;
+    border-radius: .5rem;
+    border-radius: .5rem;
+    margin-top: 75px;
+    box-shadow: 0px 5px 10px 1px rgb(0 0 0 / 15%);
+	-webkit-box-shadow: 0px 5px 10px 1px rgb(0 0 0 / 15%);
+	-moz-box-shadow: 0px 5px 10px 1px rgb(0 0 0 / 15%);
+}
+
+.Apoyo__icons img,
+.Apoyo__icons p{
+	display: inline-block;
+}
+
+.Apoyo__icons p{
+	font-family: 'Seravek', sans-serif;
+}
+
+/* contacto */
+.Contacto:before{
+	background: white;
+}
+
+.Contacto__title{
+	color: #840e33;
+	font-size: 2.5rem;
+	font-family: 'Laurentian', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+/* footer */
+.grid-pre-footer__item{
+	background: white;
+    box-shadow: 0px 5px 10px 3px rgb(0 0 0 / 15%);
+	-webkit-box-shadow: 0px 5px 10px 3px rgb(0 0 0 / 15%);
+	-moz-box-shadow: 0px 5px 10px 3px rgb(0 0 0 / 15%);
+	border-radius: .5rem;
+}
+
+.grid-pre-footer__item ul li{
+	font-family: 'Seravek-Medium';
+	color: #ba9459;
+}
+
+.Footer:before,
+.Footer{
+	background: #840e33;
+}
+
+.Footer__copy img{
+	max-width: 300px;
+}
+
+.Footer__copy p{
+	color: #ba9459;
+	font-size: 1rem;
+	line-height: 1rem;
+}
+
+.Footer__col h4{
+	margin: 40px 40px;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0;
+}

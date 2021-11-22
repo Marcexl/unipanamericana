@@ -42,7 +42,6 @@
           <img src="assets/img/home/convenios/slide-04.jpg" alt="" class="item img-fluid">
           <img src="assets/img/home/convenios/slide-05.jpg" alt="" class="item img-fluid">
           <img src="assets/img/home/convenios/slide-06.jpg" alt="" class="item img-fluid">
-          <img src="assets/img/home/convenios/slide-07.jpg" alt="" class="item img-fluid">
         </div>
       </div>
       <div class="col-lg-6 text-left wrapper-anchors">

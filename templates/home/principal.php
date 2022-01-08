@@ -3,9 +3,9 @@
     <div class="row">
       <div class="col">
         <h2 class="Principal__title">
-          <span class="white-title">LA UNIVERSIDAD PANAMERICANA <br>TE DA LAS HERRAMIENTAS </span>
-          <span class="gold-title">PARA HACER REALIDAD <br>EL MUNDO QUE IMAGINAS</span>
-          <span class="white-title small-font">Estudia Ingeniería con foco en destacar por <br>tu capacidad de resolver problemas técnicos.</span>
+          <span class="white-title">AUMENTA TU VALOR <br>PROFESIONAL CON NUESTROS <br> POSGRADOS DE INGENIERIAS</span>
+          <span class="gold-title">EN LA UNIVERSIDAD <br>PANAMERICANA GUADALAJARA</span>
+          <span class="white-title small-font"></span>
         </h2>
       </div>
       <div class="col"></div>

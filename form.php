@@ -10,7 +10,9 @@ require 'vendor/php-mailer/PHPMailer.php';
 require 'vendor/php-mailer/SMTP.php';
 
 
-$to = 'esdaigdl@up.edu.mx';
+$to = 'jmartinezro@up.edu.mx';  
+//$to = 'mxlgallardo@gmail.com';  
+//$to = 'esdaigdl@up.edu.mx'; 
 //$to = 'leandro@orange.sc';
 
 $mail = new PHPMailer(true); // Passing `true` enables exceptions

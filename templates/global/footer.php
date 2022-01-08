@@ -10,12 +10,12 @@
         <h4>Síguenos</h4>
         <ul>
           <li>
-            <a href="https://www.facebook.com/ingenierias.upguadalajara" target="_blank">
+            <a href="https://www.facebook.com/PosPedUPGdl" target="_blank">
               <img src="assets/img/global/facebook.svg" alt="Icon">
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/ing_upgdl/" target="_blank">
+            <a href="https://www.instagram.com/posg_ingupgdl/" target="_blank">
               <img src="assets/img/global/instagram.svg" alt="Icon">
             </a>
           </li>

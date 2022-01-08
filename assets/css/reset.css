@@ -30,19 +30,21 @@ form{
  	width: 250px;
 }
 
+.row .boton,
 .Nav .boton{
-	background: #840e33;
+	background: #00685f;
 	color: white;
 	font-family: 'Seravek-Bold',sans-serif;
 	font-size: .8rem;
 	padding: 12.5px 30px;
 	border: none;
 	border-radius: 0;
+	transition: all .3s;
 }
 
 .Principal{
 	padding: 90px 0 80px;
-	background: url(../img/home/principal/home.png);
+	background: url(../img/global/1.jpg);
 	background-size: cover;
 	height: 100vh;
 }
@@ -74,11 +76,12 @@ form{
 #formulario-slider{
 	position: absolute;
 	right: 6rem;
-	top: 250px;
+	top: 42%;
 	box-shadow: 0px 9px 11px 3px rgba(0,0,0,0.39);
 	-webkit-box-shadow: 0px 9px 11px 3px rgba(0,0,0,0.39);
 	-moz-box-shadow: 0px 9px 11px 3px rgba(0,0,0,0.39);
 	padding: 30px 40px;
+	min-width: 500px;
 }
 
 select.hs-input,
@@ -86,8 +89,8 @@ input.hs-input{
 	border: 1px solid #CCC!important;
 	border-radius: 0!important;
 	padding: 10px!important;
-	margin-bottom: 15px;
 	text-transform: none!important;
+	margin-bottom: 0;
 }
 
 fieldset.form-columns-2 div{
@@ -104,7 +107,7 @@ select.hs-input{
 	width: 100%;
     box-sizing: border-box!important;
     border-radius: 0;
-    background: #840e33;
+    background: #00685f;
     font-family: 'Seravek-Bold',sans-serif;
     font-size: .8rem;
     padding: 12.5px 30px;
@@ -121,21 +124,33 @@ form .actions{
 	padding: 0!important;
 }
 
+.Contacto__form input[type=submit]{
+	box-shadow:none!important;
+	border: none!important;
+}
+
+
 #preparatoria_de_procedencia-3b9aabc3-5d97-4141-88d9-04f1ca75d529{
 	margin-bottom: 0;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #cfb58a!important;
+  font-size: 1rem!important;
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: #cfb58a!important;
+  font-size: .9rem!important;
+  font-size: 1rem;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: #cfb58a!important;
+  font-size: .9rem!important;
+  font-size: 1rem;
+
 }
 
 /* segunda seccion */
@@ -158,7 +173,7 @@ h5 span.gold-title,
 }
 h5 span.purple-title,
 .g-subtitle span.purple-title{
-	color: #840e33;
+	color: #00685f;
 	font-size: 2.5rem;
 	font-family: 'Laurentian', sans-serif;
 	font-weight: normal;
@@ -176,7 +191,7 @@ h5 span.purple-title,
 .estudio-subtitle{
 	font-family: 'Laurentian-Bold', sans-serif;
 	font-size: 20px;
-	color: #840e33;
+	color: #ba9459;
 	margin-bottom: 30px;
 }
 
@@ -192,10 +207,12 @@ h5 span.purple-title,
 }
 
 .lic-list li p{
-	color: #000;
-	font-family: 'Seravek',sans-serif;
-	font-size: 1rem;
+	font-family: 'Laurentian-Bold', sans-serif;
+    font-size: 20px;
+    color: #00685f;
+    margin-bottom: 30px;
 }
+.col-6,
 .col-lg-6{
 	position: relative;
 }
@@ -216,7 +233,13 @@ h5 span.purple-title,
 	width: 50px;
 	height: 97.5px;
 }
-
+/* convenio */
+.Convenio{
+	padding-top: 135px;
+}
+.Convenio .g-subtitle{
+	margin-bottom: 30px;
+}
 /* accodeon */
 .accordion{
 	margin-top: 145px;
@@ -238,11 +261,11 @@ h5 span.purple-title,
 }
 
 .accordion-button a:first-child {
-	color: #840e33;
+	color: #00685f;
 }
 
 .accordion-button a:first-child {
-	color: #840e33;
+	color: #00685f;
 }
 
 .title-ig{
@@ -263,10 +286,13 @@ button:focus{
 	font-family: 'Seravek',sans-serif;
 }
 
+.accordion-body li{
+	text-align: justify;
+}
 
 /* apoyo */
 .Apoyo{
-	background:url(../img/global/apoyo.jpg);
+	background:url(../img/global/2.jpg);
 	background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -275,18 +301,25 @@ button:focus{
 	padding: 1rem 6rem;
 }
 
-.Apoyo__icons .col-md-6{
+.Apoyo__icons{
+	justify-content: center;
+}
+
+.Apoyo__icons .col-6{
     background: white;
-    flex: 0 0 32%;
     text-align: left;
-    margin-right: 1%;
-    padding: 15px;
     border-radius: .5rem;
     border-radius: .5rem;
+	max-width: 350px;
     margin-top: 75px;
+	margin-left:10px;
+	margin-right:10px;
     box-shadow: 0px 5px 10px 1px rgb(0 0 0 / 15%);
 	-webkit-box-shadow: 0px 5px 10px 1px rgb(0 0 0 / 15%);
 	-moz-box-shadow: 0px 5px 10px 1px rgb(0 0 0 / 15%);
+	display: flex;
+	flex-direction: row;
+    align-items: center;
 }
 
 .Apoyo__icons img,
@@ -296,6 +329,11 @@ button:focus{
 
 .Apoyo__icons p{
 	font-family: 'Seravek', sans-serif;
+	margin-top: 0;
+}
+
+.Apoyo__icons img{
+	margin: 0;
 }
 
 /* contacto */
@@ -304,7 +342,7 @@ button:focus{
 }
 
 .Contacto__title{
-	color: #840e33;
+	color: #00685f;
 	font-size: 2.5rem;
 	font-family: 'Laurentian', sans-serif;
 	font-weight: normal;
@@ -327,7 +365,7 @@ button:focus{
 
 .Footer:before,
 .Footer{
-	background: #840e33;
+	background: #00685f;
 }
 
 .Footer__copy img{
@@ -345,4 +383,166 @@ button:focus{
   color: white;
   font-size: 1.3rem;
   padding: 0;
+}
+/* formulario nuevo by marcexl */
+form .row .col{
+		padding: 0 10px 0 0;
+}
+
+form .row .col:last-child{
+		padding: 0;
+}
+
+.label{
+		display: none;
+}
+form .row{
+margin-bottom: 15px;
+}
+form .row .boton{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+form .row .boton:hover{
+		background: #c8a977;
+}
+
+.error{
+	font-size: .8rem;
+  display: inherit;
+  color: #818181;
+  font-style: oblique;
+  margin-bottom: 0;
+}
+
+select:required:invalid {
+  color: #c8a977;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+
+option {
+  color: black;
+}
+
+@media screen and (max-width: 767px){
+	.Principal{
+			background-position-x: -45px;
+	}
+	
+	.Principal__container{
+			padding: 0.5rem 3rem;
+	}
+	.Header__innerContainer {
+		padding: 10px 15px;
+	}
+
+	.Header__logo a h1{
+		width: 125px;
+		height: 40px;
+	}
+	.Principal__title{
+		margin-top: 9.5rem;
+	}
+
+	.Contacto__title,
+	h5 span.gold-title,
+	h5 span.purple-title,
+	.g-subtitle span.purple-title,
+	.g-subtitle span.white-title,
+	.g-subtitle span.gold-title,
+	.Principal__title span.white-title, 
+	.Principal__title span.gold-title{
+		font-size: 25px;
+	}
+
+	.g-subtitle span.purple-title,
+	.g-subtitle span.white-title,
+	.g-subtitle span.gold-title{
+		text-align: center;
+	}
+	.Apoyo__icons .col-6{
+		max-width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.Apoyo .g-subtitle span.purple-title,
+	.Apoyo .g-subtitle span.white-title,
+	.Apoyo .g-subtitle span.gold-title{
+		text-align: left;
+		padding-left: 2rem;
+	}
+
+	#formulario-slider {
+    position: inherit;
+    margin-top: 30px;
+    box-shadow: none!important;
+    padding: 30px 40px;
+    min-width: 100%;
+	}
+
+	.Convenio {
+    padding: 80px 0 40px;
+	}
+	
+	.accordion{
+		margin-top: 0;
+	}
+
+	.Apoyo{
+			background-size: 1024px 284px;
+			background-position-x: -30px;
+	}
+	
+	.Apoyo__icons img{
+		max-width: 100px;
+	}
+	
+	.Apoyo__icons p{
+	    line-height: 1.3rem;
+	}
+	
+	.Apoyo .container-fluid {
+    padding: 0 15px;
+	}
+
+	.Apoyo__icons {
+    display: block;
+    padding: 30px 15px;
+	}
+
+	.Apoyo__icons .col-md-6 {
+    margin-top: 15px;
+	}
+	
+	.Contacto__title{
+		margin-bottom: 0;
+	}
+
+	.Footer__copy img{
+			margin: 0 auto;
+			margin-bottom: 15px;
+	}
+	.Footer__copy p {
+    line-height: 1.5rem;
+    text-align: center;
+	}
+
+	.Footer__col h4{
+			text-align: center;
+	}
+
+	.Footer__redes ul{
+		text-align: center;
+	}
+	
+	.Footer__redes ul li {
+    margin-right: 0;
+    margin: 0 10px;
+    text-align: center;
+	}
 }

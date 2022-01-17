@@ -15,7 +15,7 @@
 
         <ul class="lic-list">
           <li class="lic-item"> <p>En tu carrera laboral</p></li>
-          <li class="lic-item"> <p>Puestos de generancia </p></li>
+          <li class="lic-item"> <p>Puestos de gerencia </p></li>
           <li class="lic-item"> <p>O directivos</p></li>
         </ul>
         

@@ -14,7 +14,7 @@ if(isset($_POST))
 	//$school   = utf8_decode($_POST['escolaridad']);
 
 	//$to = 'mxlgallardo@gmail.com'; // note the comma
-	$to = 'To: JMartinez <jmartinezro@up.edu.mx>';  
+	$to = 'To: JMartinez <jmartinezro@up.edu.mx>, José Gallo Ruiz <jose@orange.sc>';  
 
 	// Subject
 	$subject = 'Nuevo registro en Posgrados de Ingenierias';

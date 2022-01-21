@@ -42,7 +42,7 @@
           <div class="accordion-item">
             <div class="accordion-header" id="headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <a href="#" class="bold">Maestría en Estructura</a>
+                <a href="#" class="bold">Maestría en Estructuras</a>
               </button>
             </div>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">

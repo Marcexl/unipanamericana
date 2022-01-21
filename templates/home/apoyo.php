@@ -10,7 +10,7 @@
     <div class="row Apoyo__icons">
       <div class="col-6">
         <img src="assets/img/home/apoyo/icon-finag.png" alt="Logo" class="icon-apoyo">
-        <p><b>Plane de </b><br>financiamiento</p>
+        <p><b>Planes de </b><br>financiamiento</p>
       </div>
       <div class="col-6">
         <img src="assets/img/home/apoyo/icon-hand.png" alt="Logo" class="icon-apoyo">

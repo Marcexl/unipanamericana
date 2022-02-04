@@ -1,21 +1,41 @@
 <?php
-require 'vendor/autoload.php';
 
-/*if (php_sapi_name() != 'cli') {
-    throw new Exception('This application must be run on the command line.');
-}*/
+//require 'vendor/autoload.php';
+require_once 'lib/vendor/autoload.php';
+  
+$client = getClient();
+$service = new Google_Service_Sheets($client);
 
-/**
- * Returns an authorized API client.
- * @return Google_Client the authorized client object
- */
-function getClient()
-{
+// Prints the names and majors of students in a sample spreadsheet:
+// https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
+$spreadsheetId = '1D9wDhVO7xAD-p0677OsIW7l9sqVm_T6mDGsVrZwBPNQ';
+$range = 'results!A2:G';
+$values = [
+    ["Marcelo","Escalante Damill","mxlgallardo@gmail.com","1123922906","Mondongo","Multimedia","Aguante River"]
+];
+
+
+$body = new Google_Service_Sheets_ValueRange([
+    'values' => $values
+]);
+
+$params = [
+    'valueInputOption' => 'RAW'
+];
+
+$result = $service->spreadsheets_values->append(
+    $spreadsheetId,
+    $range,
+    $body,
+    $params
+);
+
+function getClient() {
     $client = new Google_Client();
-    $client->setApplicationName('Google Sheets API PHP Quickstart');
-    $client->setScopes(Google_Service_Sheets::SPREADSHEETS_READONLY);
-    $client->setAuthConfig('secret.json');
+    $client->setApplicationName('google sheets with PHP');
+    $client->setScopes(Google_Service_Sheets::SPREADSHEETS);
     $client->setAccessType('offline');
+    $client->setAuthConfig('secret.json');
     $client->setPrompt('select_account consent');
 
     // Load previously authorized token from a file, if it exists.
@@ -56,27 +76,5 @@ function getClient()
         file_put_contents($tokenPath, json_encode($client->getAccessToken()));
     }
     return $client;
-}
-
-
-// Get the API client and construct the service object.
-$client = getClient();
-$service = new Google_Service_Sheets($client);
-
-// Prints the names and majors of students in a sample spreadsheet:
-// https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
-$spreadsheetId = '1D9wDhVO7xAD-p0677OsIW7l9sqVm_T6mDGsVrZwBPNQ';
-$range = 'Class Data!A2:E';
-$response = $service->spreadsheets_values->get($spreadsheetId, $range);
-$values = $response->getValues();
-
-if (empty($values)) {
-    print "No data found.\n";
-} else {
-    print "Name, Major:\n";
-    foreach ($values as $row) {
-        // Print columns A and E, which correspond to indices 0 and 4.
-        printf("%s, %s\n", $row[0], $row[4]);
-    }
-}
+  }
 ?>

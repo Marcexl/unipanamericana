@@ -32,23 +32,21 @@
   fbq('track', 'PageView');
   fbq('track', 'Lead');
   </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=445930600470880&ev=PageView&noscript=1"
-  /></noscript>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=445930600470880&ev=PageView&noscript=1"/>
+  </noscript>
   <!-- End Facebook Pixel Code -->
 
   <!-- Global site tag (gtag.js) - Google Ads: 656698714 --> 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-656698714"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-656698714'); </script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-656698714"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-656698714');
-    gtag('event', 'conversion', {'send_to': 'AW-656698714/p27MCODb4s8BENrakbkC'});
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-656698714"></script> 
+  <script> 
+  window.dataLayer = window.dataLayer || []; 
+  function gtag(){
+    dataLayer.push(arguments);
+  } 
+  gtag('js', new Date()); 
+  gtag('config', 'AW-656698714'); 
   </script>
-
 </head>
 
 <body>

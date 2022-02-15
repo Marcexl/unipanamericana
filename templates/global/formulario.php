@@ -90,6 +90,10 @@
             <option disabled selected value="">Posgrado de interés*</option>
             <option value="Maestría en Ingeniería">Maestría en Ingeniería</option>
             <option value="Maestría en Negocios de Innovación Tecnológica">Maestría en Negocios de Innovación Tecnológica</option>
+            <option value="Maestría en Estructuras">Maestría en Estructuras</option>
+            <option value="Maestría en Administración de la Construcción">Maestría en Administración de la Construcción</option>
+            <option value="Especialidad en Dirección de Operaciones">Especialidad en Dirección de Operaciones</option>
+            <option value="Especialidad en Ingeniería y Gestión de Proyectos">Especialidad en Ingeniería y Gestión de Proyectos</option>
         </select>
     </div>
     

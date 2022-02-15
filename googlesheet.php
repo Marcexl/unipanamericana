@@ -56,9 +56,8 @@ function getClient() {
         } else {
             // Request authorization from the user.
             $authUrl = $client->createAuthUrl();
-            printf("Open the following link in your browser:\n%s\n", $authUrl);
-            print 'Enter verification code: ';
-            $authCode = trim(fgets(STDIN));
+            printf("Open the following link in your browser:\n%s\n", '<a href="'.$authUrl.'">link</a>');
+            $authCode = $_GET['code'];
 
             // Exchange authorization code for an access token.
             $accessToken = $client->fetchAccessTokenWithAuthCode($authCode);

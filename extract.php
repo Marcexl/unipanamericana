@@ -1,9 +1,9 @@
 <?php 
 $zip = new ZipArchive; 
-$res = $zip->open('lib/google.zip'); 
+$res = $zip->open('wp-content/lib/google.zip'); 
 if ($res === TRUE) 
 { 
-    $zip->extractTo('lib'); 
+    $zip->extractTo('wp-content/lib'); 
     $zip->close(); 
     echo 'woot!'; 
 } 

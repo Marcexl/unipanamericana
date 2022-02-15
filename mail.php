@@ -48,44 +48,45 @@ if(isset($_POST))
 	$headers[] = $to;
 	$headers[] = 'From: no-reply <no-reply@up.edu.mx>';
 
+	$client = getClient();
+	$service = new Google_Service_Sheets($client);
+
+	// Prints the names and majors of students in a sample spreadsheet:
+	// https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
+	$spreadsheetId = '1D9wDhVO7xAD-p0677OsIW7l9sqVm_T6mDGsVrZwBPNQ';
+	$range = 'results!A2:H';
+	
+	$posgrado = utf8_encode($posgrado);
+	$expe     = utf8_encode($expe);
+	
+	$values = [
+		["{$today}","{$fname}","{$lname}","{$email}","{$phone}","{$empresa}","{$posgrado}","{$expe}"]
+	];
+
+	/*$values = [
+		["{$fname}","{$lname}","{$email}","{$phone}","{$empresa}","{$posgrado}","{$expe}"]
+	];*/
+
+
+	$body = new Google_Service_Sheets_ValueRange([
+		'values' => $values
+	]);
+
+	$params = [
+		'valueInputOption' => 'RAW'
+	];
+
+	$result = $service->spreadsheets_values->append(
+		$spreadsheetId,
+		$range,
+		$body,
+		$params
+	);
+
+
 	// Mail it
 	if(mail($to, $subject, $message, implode("\r\n", $headers)))
 	{
-		$client = getClient();
-		$service = new Google_Service_Sheets($client);
-	
-		// Prints the names and majors of students in a sample spreadsheet:
-		// https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
-		$spreadsheetId = '1D9wDhVO7xAD-p0677OsIW7l9sqVm_T6mDGsVrZwBPNQ';
-		$range = 'results!A2:H';
-		
-		$posgrado = utf8_encode($posgrado);
-		$expe     = utf8_encode($expe);
-		
-		$values = [
-			["{$today}","{$fname}","{$lname}","{$email}","{$phone}","{$empresa}","{$posgrado}","{$expe}"]
-		];
-	
-		/*$values = [
-			["{$fname}","{$lname}","{$email}","{$phone}","{$empresa}","{$posgrado}","{$expe}"]
-		];*/
-	
-	
-		$body = new Google_Service_Sheets_ValueRange([
-			'values' => $values
-		]);
-	
-		$params = [
-			'valueInputOption' => 'RAW'
-		];
-	
-		$result = $service->spreadsheets_values->append(
-			$spreadsheetId,
-			$range,
-			$body,
-			$params
-		);
-
 		$data->send = true;
 		echo json_encode($data);
 		die();
@@ -148,6 +149,6 @@ function getClient() {
         file_put_contents($tokenPath, json_encode($client->getAccessToken()));
     }
     return $client;
-  }
+}
   
 ?>
